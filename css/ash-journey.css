@@ -1112,3 +1112,77 @@ body.ash-page a {
 .gallery-image:hover {
     transform: scale(1.03);
 }
+
+/*==============================
+ EXTRA
+==============================*/
+
+.ash-extra-lead{
+
+    max-width:700px;
+    margin:0 auto 70px;
+    text-align:center;
+    line-height:2;
+    color:#ccc;
+
+}
+
+.ash-extra-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:40px;
+
+}
+
+.ash-extra-card{
+
+    background:#151515;
+    border:1px solid rgba(255,255,255,.08);
+    overflow:hidden;
+    transition:.4s;
+
+}
+
+.ash-extra-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.ash-extra-card img{
+
+    width:100%;
+    display:block;
+    cursor:pointer;
+
+}
+
+.ash-extra-content{
+
+    padding:30px;
+
+}
+
+.ash-extra-content span{
+
+    color:#d60000;
+    font-size:.9rem;
+    letter-spacing:.2em;
+
+}
+
+.ash-extra-content h3{
+
+    margin:10px 0 20px;
+    font-family:"Playfair Display",serif;
+    font-size:2rem;
+
+}
+
+.ash-extra-content p{
+
+    color:#bdbdbd;
+    line-height:1.9;
+
+}
