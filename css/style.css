@@ -1812,80 +1812,84 @@ body.menu-open {
    BLOG LIST
 ======================================== */
 
-.blog-page {
-    background: #f7f7f4;
+.home-blog {
+    background: #111;
+    color: #fff;
 }
 
-.blog-grid {
+.home-blog .section-heading h2 {
+    color: #fff;
+}
+
+.home-blog .section-en {
+    color: #ffd800;
+}
+
+.home-blog .text-link {
+    color: #fff;
+}
+
+.home-blog .blog-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 60px 36px;
+    gap: 36px;
 }
 
-.blog-card {
-    background: #fff;
+.home-blog .blog-card {
+    background: #1b1b1b;
 }
 
-.blog-card-image {
+.home-blog .blog-card > a {
     display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.home-blog .blog-card-image {
     overflow: hidden;
     aspect-ratio: 4 / 3;
 }
 
-.blog-card-image img {
+.home-blog .blog-card-image img {
     width: 100%;
     height: 100%;
+    display: block;
     object-fit: cover;
     transition: transform 0.6s ease;
 }
 
-.blog-card:hover .blog-card-image img {
+.home-blog .blog-card:hover .blog-card-image img {
     transform: scale(1.05);
 }
 
-.blog-card-content {
-    padding: 30px;
+.home-blog .blog-card-content {
+    padding: 32px;
 }
 
-.blog-meta {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 20px;
+.home-blog .blog-meta {
+    margin-bottom: 18px;
 }
 
-.blog-meta time {
-    font-family: "Playfair Display", serif;
-    font-size: 0.85rem;
-    letter-spacing: 0.08em;
+.home-blog .blog-meta time {
+    color: rgba(255, 255, 255, 0.65);
 }
 
-.blog-meta span {
-    padding: 5px 10px;
-    font-size: 0.68rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    background: #ffd800;
+.home-blog .blog-meta span {
+    color: #ffd800;
 }
 
-.blog-card h2 {
+.home-blog .blog-card-content h2 {
     margin: 0 0 18px;
-    font-size: 1.35rem;
+    font-size: 1.4rem;
     line-height: 1.7;
+    color: #fff;
 }
 
-.blog-card h2 a {
-    color: #111;
-    text-decoration: none;
-}
-
-.blog-card-content > p {
-    margin: 0 0 25px;
-    color: #666;
+.home-blog .blog-card-content p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.68);
     line-height: 2;
 }
-
 
 /* ========================================
    BLOG ARTICLE
@@ -2091,7 +2095,7 @@ body.menu-open {
 }
 
 .home-blog-content h3 a {
-    color: #fff;
+    color: #111;
     text-decoration: none;
 }
 
@@ -2114,11 +2118,13 @@ body.menu-open {
 
 }
 
-.question {
-    display: inline-block;
-    background: #f8f8f8;
-    border-left: 4px solid #d60000;
-    padding: 6px 12px;
-    font-weight: bold;
-    margin: 12px 0;
+@media screen and (max-width: 768px) {
+    .home-blog .blog-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .home-blog .blog-card-content {
+        padding: 24px;
+    }
 }
