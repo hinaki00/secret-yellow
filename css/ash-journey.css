@@ -1186,3 +1186,78 @@ body.ash-page a {
     line-height:1.9;
 
 }
+
+/*==============================
+ NOVEL
+==============================*/
+
+.ash-novel-lead{
+
+    max-width:700px;
+    margin:0 auto 60px;
+    text-align:center;
+    color:#cfcfcf;
+    line-height:2;
+
+}
+
+.ash-novel-list{
+
+    display:grid;
+    gap:30px;
+
+}
+
+.ash-novel-card{
+
+    display:block;
+    padding:35px;
+
+    background:#151515;
+
+    border-left:4px solid #d60000;
+
+    text-decoration:none;
+    color:#fff;
+
+    transition:.3s;
+
+}
+
+.ash-novel-card:hover{
+
+    transform:translateX(10px);
+    background:#1d1d1d;
+
+}
+
+.ash-novel-card span{
+
+    color:#d60000;
+    letter-spacing:.2em;
+    font-size:.85rem;
+
+}
+
+.ash-novel-card h3{
+
+    margin:15px 0;
+    font-size:2rem;
+    font-family:"Playfair Display",serif;
+
+}
+
+.ash-novel-card p{
+
+    color:#bfbfbf;
+    line-height:1.8;
+
+}
+
+.ash-novel-card strong{
+
+    display:inline-block;
+    margin-top:25px;
+    color:#fff;
+
+}
