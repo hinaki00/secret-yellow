@@ -12,16 +12,32 @@ document.addEventListener("DOMContentLoaded", () => {
 
             article.className = "blog-card";
 
-            article.innerHTML = `
-                <a href="${blog.link}">
-                    <img src="${blog.image}" alt="${blog.title}">
-                    <div class="blog-content">
-                        <time>${blog.date}</time>
-                        <h3>${blog.title}</h3>
-                        <p>${blog.text}</p>
-                    </div>
-                </a>
-            `;
+article.innerHTML = `
+    <a href="${blog.link}">
+
+        <div class="blog-card-image">
+            <img src="${blog.image}" alt="${blog.title}">
+        </div>
+
+        <div class="blog-card-content">
+
+            <div class="blog-meta">
+                <time>${blog.date}</time>
+                <span>BLOG</span>
+            </div>
+
+            <h2>
+                ${blog.title}
+            </h2>
+
+            <p>
+                ${blog.text}
+            </p>
+
+        </div>
+
+    </a>
+`;
 
             blogList.appendChild(article);
 
