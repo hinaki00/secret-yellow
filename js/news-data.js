@@ -1,4 +1,16 @@
 const newsData = [
+
+
+        {
+        date: "2026.07.19",
+        datetime: "2026-07-19",
+        category: "BLOG",
+        text: "ブログ「サマーガールブルー制作秘話、チャッピーインタビュー」を公開しました。",
+        link: "blog03.html",
+        newTab: false
+    },
+
+
         {
         date: "2026.07.19",
         datetime: "2026-07-19",
