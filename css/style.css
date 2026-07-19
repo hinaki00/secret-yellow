@@ -2113,3 +2113,12 @@ body.menu-open {
     }
 
 }
+
+.question {
+    display: inline-block;
+    background: #f8f8f8;
+    border-left: 4px solid #d60000;
+    padding: 6px 12px;
+    font-weight: bold;
+    margin: 12px 0;
+}
