@@ -13,7 +13,7 @@ const newsData = [
         datetime: "2026-07-18",
         category: "WEBSITE",
         text: "特設サイト「アッシュ・ジャーニー」を公開しました。",
-        link: "index.html",
+        link: "ash-journey.html",
         newTab: false
     },
     {
