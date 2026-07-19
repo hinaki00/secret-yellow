@@ -129,3 +129,14 @@ galleryLightbox.addEventListener("click", e => {
 });
 });
 
+window.addEventListener("load", () => {
+
+    const loading = document.getElementById("loading");
+
+    setTimeout(() => {
+
+        loading.classList.add("hide");
+
+    }, 3500);
+
+});
