@@ -1261,3 +1261,66 @@ body.ash-page a {
     color:#fff;
 
 }
+
+/* ==========================
+   Loading
+========================== */
+
+.loading{
+    position:fixed;
+    inset:0;
+    z-index:99999;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#000;
+
+    transition:opacity 1s ease, visibility 1s ease;
+}
+
+.loading.hide{
+    opacity:0;
+    visibility:hidden;
+}
+
+.loading-message{
+    text-align:center;
+    color:#fff;
+}
+
+.loading-line1{
+    margin-bottom:24px;
+
+    font-size:clamp(2rem,4vw,3rem);
+    font-family:"Noto Serif JP", serif;
+    letter-spacing:.08em;
+
+    opacity:0;
+    animation:fadeIn 1.5s forwards;
+}
+
+.loading-line2{
+
+    font-size:1rem;
+    color:#cccccc;
+    letter-spacing:.15em;
+
+    opacity:0;
+    animation:fadeIn 1.5s .9s forwards;
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(15px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
