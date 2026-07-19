@@ -1,12 +1,13 @@
 const newsData = [
         {
         date: "2026.07.18",
-        datetime: "2026-07-18",
-        category: "WEBSITE",
-        text: "「アッシュ・ジャーニー特設サイト」を公開しました。",
-        link: "pdf/summer-girl-blue.pdf",
+        datetime: "2026-07-19",
+        category: "NOVEL",
+        text: "「アッシュ・ジャーニー第一話（小説）」を公開しました。",
+        link: "novel01.html",
         newTab: true
     },
+    
     {
         date: "2026.07.18",
         datetime: "2026-07-18",
