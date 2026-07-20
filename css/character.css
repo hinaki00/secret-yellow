@@ -1,0 +1,107 @@
+.character-page {
+    background: #f8f8f8;
+}
+
+.character-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 36px;
+}
+
+.character-card {
+    background: #fff;
+    overflow: hidden;
+}
+
+.character-image {
+    aspect-ratio: 3 / 4;
+    overflow: hidden;
+    background: #eee;
+}
+
+.character-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.character-card:hover .character-image img {
+    transform: scale(1.04);
+}
+
+.character-content {
+    padding: 26px;
+}
+
+.character-work {
+    margin: 0 0 10px;
+    color: #d60000;
+    font-family: "Playfair Display", serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.character-content h2 {
+    margin: 0 0 16px;
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
+.character-content h2 span {
+    display: block;
+    margin-top: 4px;
+    color: #999;
+    font-family: "Playfair Display", serif;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+
+.character-data {
+    margin: 0 0 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ddd;
+    color: #666;
+    font-size: 0.85rem;
+}
+
+.character-description {
+    margin: 0;
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.9;
+}
+
+.character-page .page-back {
+    margin-top: 70px;
+    text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+
+    .character-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 28px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .character-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .character-content {
+        padding: 24px;
+    }
+
+    .character-image {
+        aspect-ratio: 4 / 5;
+    }
+
+}
