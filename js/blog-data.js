@@ -3,7 +3,7 @@ const blogData = [
         date: "2026.07.20",
         title: "チャッピー人生インタビュー",
         text: "チャッピーに人生についてインタビューしてもらいました。",
-        image: "images/.jpg",
+        image: "images/profile.jpg",
         link: "blog05.html"
     },
         {
