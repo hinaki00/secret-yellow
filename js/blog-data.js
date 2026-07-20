@@ -1,4 +1,11 @@
 const blogData = [
+        {
+        date: "2026.07.20",
+        title: "私の人生について",
+        text: "私の人生についてお話しします。",
+        image: "images/blog02.jpg",
+        link: "blog04.html"
+    },
     {
         date: "2026.07.19",
         title: "サマーガール・ブルーの制作について",
