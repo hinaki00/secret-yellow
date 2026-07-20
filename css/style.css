@@ -2374,44 +2374,39 @@ body.menu-open {
     font-size: 22px;
     font-weight: 500;
 }
-/* ===== Visitor Counter ===== */
+/*=========================
+ Visitor Counter
+==========================*/
 
 .visitor-counter{
-    margin:80px auto 40px;
+    width:100%;
+    margin:80px auto;
     text-align:center;
 }
 
-.counter-title{
-    display:inline-block;
-    font-size:12px;
-    letter-spacing:.3em;
-    color:#999;
-    margin-bottom:15px;
-    position:relative;
+.counter-line{
+    width:120px;
+    height:1px;
+    background:#d8d8d8;
+    margin:15px auto;
 }
 
-.counter-title::before,
-.counter-title::after{
-    content:"";
-    display:inline-block;
-    width:40px;
-    height:1px;
-    background:#e0d7a4;
-    margin:0 15px;
-    vertical-align:middle;
+.counter-title{
+    font-size:13px;
+    letter-spacing:.25em;
+    color:#999;
 }
 
 .counter-number{
     font-size:42px;
-    font-weight:700;
-    letter-spacing:.18em;
-    color:#f4c400;
+    font-weight:bold;
+    letter-spacing:.2em;
+    color:#d6b600;   /* secret yellow */
     font-family:monospace;
+    margin:10px 0;
 }
 
 .counter-message{
-    margin-top:12px;
     font-size:13px;
     color:#888;
-    letter-spacing:.08em;
 }
