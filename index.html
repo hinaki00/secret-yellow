@@ -549,15 +549,21 @@
 
     </main>
 <div class="visitor-counter">
-    <span class="counter-title">VISITORS</span>
+    <div class="counter-line"></div>
 
-    <div class="counter-number">
+    <p class="counter-title">
+        👥 VISITORS
+    </p>
+
+    <p class="counter-number">
         <span id="visitor-count">000000</span>
-    </div>
+    </p>
 
     <p class="counter-message">
         Thank you for visiting.
     </p>
+
+    <div class="counter-line"></div>
 </div>
     <!-- フッター -->
     <footer class="footer">
@@ -607,7 +613,23 @@
 <script src="js/blog.js"></script>
 
 <script src="js/script.js"></script>
+<script>
+fetch("https://api.counterapi.dev/v1/secret-yellow/homepage/up")
+.then(res => res.json())
+.then(data => {
 
+    document.getElementById("visitor-count").textContent =
+        String(data.count).padStart(6,"0");
+
+})
+.catch(err => {
+
+    console.error(err);
+
+    document.getElementById("visitor-count").textContent = "------";
+
+});
+</script>
 </body>
 
 </html>
