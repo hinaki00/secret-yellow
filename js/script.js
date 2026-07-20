@@ -175,3 +175,15 @@ window.addEventListener("load", () => {
     }, 1700);
 
 });
+
+const namespace = "secret-yellow";
+const key = "homepage";
+
+fetch(`https://api.countapi.xyz/hit/${namespace}/${key}`)
+.then(res => res.json())
+.then(data => {
+
+    document.getElementById("visitor-count").textContent =
+        String(data.value).padStart(6,"0");
+
+});
