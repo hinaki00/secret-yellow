@@ -1,5 +1,14 @@
 const newsData = [
 
+            {
+        date: "2026.07.20",
+        datetime: "2026-07-20",
+        category: "BLOG",
+        text: "ブログ「チャッピー人生インタビュー」を公開しました。",
+        link: "blog05.html",
+        newTab: false
+    },
+
         {
         date: "2026.07.20",
         datetime: "2026-07-20",
