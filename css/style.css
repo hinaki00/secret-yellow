@@ -1960,7 +1960,102 @@ body.menu-open {
     margin-top: 80px;
 }
 
+/* ========================================
+   BLOG PAGE
+======================================== */
 
+.blog-page {
+    background: #f7f7f4;
+}
+
+.blog-page .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 36px;
+}
+
+.blog-page .blog-card {
+    background: #fff;
+}
+
+.blog-page .blog-card > a {
+    display: block;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+}
+
+.blog-page .blog-card-image {
+    overflow: hidden;
+    aspect-ratio: 4 / 3;
+    background: #eee;
+}
+
+.blog-page .blog-card-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.blog-page .blog-card:hover .blog-card-image img {
+    transform: scale(1.05);
+}
+
+.blog-page .blog-card-content {
+    padding: 32px;
+}
+
+.blog-page .blog-meta {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 18px;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+}
+
+.blog-page .blog-meta time {
+    color: #888;
+}
+
+.blog-page .blog-meta span {
+    color: #c5a800;
+    font-weight: 700;
+}
+
+.blog-page .blog-card-content h2 {
+    margin: 0 0 18px;
+    color: #111;
+    font-size: 1.4rem;
+    line-height: 1.7;
+}
+
+.blog-page .blog-card-content p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 2;
+}
+
+.blog-page .page-back {
+    margin-top: 70px;
+    text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+
+    .blog-page .blog-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .blog-page .blog-card-content {
+        padding: 24px;
+    }
+
+}
 /* ========================================
    NEWS / BLOG MOBILE
 ======================================== */
@@ -2127,4 +2222,123 @@ body.menu-open {
     .home-blog .blog-card-content {
         padding: 24px;
     }
+}
+
+/* =========================
+   HOME CHARACTER
+========================= */
+
+.home-character {
+    background: #f7f7f7;
+}
+
+.home-character-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 32px;
+}
+
+.home-character-card {
+    background: #fff;
+    overflow: hidden;
+}
+
+.home-character-image {
+    aspect-ratio: 3 / 4;
+    overflow: hidden;
+    background: #eee;
+}
+
+.home-character-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.home-character-card:hover .home-character-image img {
+    transform: scale(1.04);
+}
+
+.home-character-content {
+    padding: 26px;
+}
+
+.home-character-work {
+    margin: 0 0 10px;
+    color: #d60000;
+    font-family: "Playfair Display", serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.home-character-content h3 {
+    margin: 0 0 16px;
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
+.home-character-content h3 span {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+    font-family: "Playfair Display", serif;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+
+.home-character-content > p:last-child {
+    margin: 0;
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.9;
+}
+
+.home-character-more {
+    margin-top: 55px;
+    text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+
+    .home-character-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .home-character-card:last-child {
+        grid-column: 1 / -1;
+        max-width: calc(50% - 16px);
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .home-character-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .home-character-card:last-child {
+        grid-column: auto;
+        max-width: none;
+        margin: 0;
+    }
+
+    .home-character-content {
+        padding: 24px;
+    }
+
+}
+
+.question {
+    display: inline-block;
+    color: #d60000;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 12px;
 }
