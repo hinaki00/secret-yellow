@@ -45,22 +45,15 @@ body{
 
 }
 
-.error-image{
-
-    flex:1;
-
-    text-align:center;
-
-}
-
 .error-image img{
 
     width:100%;
-    max-width:420px;
+    max-width:220px;
 
     animation:fadeUp 1.2s ease;
 
 }
+
 
 .error-content{
 
@@ -224,11 +217,15 @@ body{
 
     }
 
-    .error-image img{
+.error-image img{
 
-        max-width:280px;
+    width:50%;
+    max-width:220px;
 
-    }
+    animation:fadeUp 1.2s ease;
+
+}
+
 
     .error-number{
 
