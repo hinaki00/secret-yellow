@@ -2374,3 +2374,44 @@ body.menu-open {
     font-size: 22px;
     font-weight: 500;
 }
+/* ===== Visitor Counter ===== */
+
+.visitor-counter{
+    margin:80px auto 40px;
+    text-align:center;
+}
+
+.counter-title{
+    display:inline-block;
+    font-size:12px;
+    letter-spacing:.3em;
+    color:#999;
+    margin-bottom:15px;
+    position:relative;
+}
+
+.counter-title::before,
+.counter-title::after{
+    content:"";
+    display:inline-block;
+    width:40px;
+    height:1px;
+    background:#e0d7a4;
+    margin:0 15px;
+    vertical-align:middle;
+}
+
+.counter-number{
+    font-size:42px;
+    font-weight:700;
+    letter-spacing:.18em;
+    color:#f4c400;
+    font-family:monospace;
+}
+
+.counter-message{
+    margin-top:12px;
+    font-size:13px;
+    color:#888;
+    letter-spacing:.08em;
+}
