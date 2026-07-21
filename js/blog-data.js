@@ -1,4 +1,12 @@
 const blogData = [
+
+                {
+        date: "2026.07.20",
+        title: "作業環境紹介",
+        text: "作業環境を紹介します。",
+        image: "images/blog06.jpg",
+        link: "blog06.html"
+    },
             {
         date: "2026.07.20",
         title: "チャッピー人生インタビュー",

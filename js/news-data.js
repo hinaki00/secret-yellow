@@ -1,5 +1,14 @@
 const newsData = [
 
+        {
+        date: "2026.07.21",
+        datetime: "2026-07-21",
+        category: "BLOG",
+        text: "ブログ「作業環境紹介」を公開しました。",
+        link: "blog06.html",
+        newTab: false
+    },
+
                 {
         date: "2026.07.21",
         datetime: "2026-07-21",
