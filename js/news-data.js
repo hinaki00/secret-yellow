@@ -1,6 +1,23 @@
 const newsData = [
 
-            {
+                {
+        date: "2026.07.21",
+        datetime: "2026-07-21",
+        category: "WEB CLAP",
+        text: "ウェブ拍手を設置しました。",
+        link: "http://clap.webclap.com/clap.php?id=hinaki01",
+        newTab: false
+    },
+
+    {
+        date: "2026.07.20",
+        datetime: "2026-07-20",
+        category: "CONTENTS",
+        text: "エラー画面「404」を公開しました。",
+        link: "404.html",
+        newTab: false
+    },
+    {
         date: "2026.07.20",
         datetime: "2026-07-20",
         category: "BLOG",
