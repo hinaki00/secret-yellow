@@ -1,6 +1,15 @@
 const newsData = [
 
             {
+        date: "2026.07.22",
+        datetime: "2026-07-22",
+        category: "BLOG",
+        text: "ブログ「「笑っている」イラストメイキング」を公開しました。",
+        link: "blog07.html",
+        newTab: false
+    },
+
+            {
         date: "2026.07.21",
         datetime: "2026-07-21",
         category: "NOVEL",
