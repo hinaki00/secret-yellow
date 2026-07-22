@@ -1,13 +1,19 @@
 const galleryList = document.querySelector(".js-gallery-list");
 
-if (galleryList && Array.isArray(galleryData)) {
+if (galleryList && typeof galleryData !== "undefined") {
 
-    // gallery.html
-    if (galleryList.classList.contains("gallery-list-grid")) {
+    const isGalleryPage =
+        galleryList.classList.contains("gallery-list-grid");
 
-  galleryList.innerHTML = galleryData
-    .slice(0, limit)
-    .map((item, index) => {
+    const limit =
+        Number(galleryList.dataset.limit) || galleryData.length;
+
+    if (isGalleryPage) {
+
+        // gallery.html用
+        galleryList.innerHTML = galleryData
+            .slice(0, limit)
+            .map((item) => {
                 return `
                     <article class="gallery-list-item">
 
@@ -27,7 +33,6 @@ if (galleryList && Array.isArray(galleryData)) {
                             </div>
 
                             <div class="gallery-list-info">
-
                                 <p class="gallery-list-category">
                                     ${item.category}
                                 </p>
@@ -37,7 +42,6 @@ if (galleryList && Array.isArray(galleryData)) {
                                 <p class="gallery-list-year">
                                     ${item.year}
                                 </p>
-
                             </div>
 
                         </button>
@@ -46,13 +50,12 @@ if (galleryList && Array.isArray(galleryData)) {
                 `;
             })
             .join("");
-    }
 
-    // index.html
-    else if (galleryList.classList.contains("gallery-grid")) {
+    } else {
 
+        // index.html用
         galleryList.innerHTML = galleryData
-            .slice(0, 3)
+            .slice(0, limit)
             .map((item, index) => {
                 return `
                     <article class="gallery-item ${index === 0 ? "gallery-item-large" : ""}">
@@ -73,11 +76,8 @@ if (galleryList && Array.isArray(galleryData)) {
                             </div>
 
                             <div class="gallery-info">
-
                                 <p>${item.category}</p>
-
                                 <h3>${item.title}</h3>
-
                             </div>
 
                         </button>
