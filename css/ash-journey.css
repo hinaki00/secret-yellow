@@ -1324,3 +1324,101 @@ body.ash-page a {
     }
 
 }
+
+/* ========================================
+   EXTRA / 四コマ漫画
+======================================== */
+
+.ash-extra {
+    background: #545454;
+}
+
+.ash-extra-lead {
+    max-width: 680px;
+    margin: 0 0 50px;
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 2;
+}
+
+.ash-extra-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+    align-items: start;
+}
+
+.ash-extra-card {
+    min-width: 0;
+    overflow: hidden;
+    background: #000000;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.ash-extra-card .ash-extra-image {
+    display: block;
+    width: 100%;
+    max-width: none;
+    height: auto;
+    margin: 0;
+    object-fit: contain;
+    aspect-ratio: auto;
+}
+
+.ash-extra-content {
+    padding: 24px;
+}
+
+.ash-extra-content > span {
+    display: block;
+    margin-bottom: 8px;
+    color: #b59a33;
+    font-family: "Playfair Display", serif;
+    font-size: 12px;
+    letter-spacing: 0.18em;
+}
+
+.ash-extra-content h3 {
+    margin: 0 0 12px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.ash-extra-content p {
+    margin: 0;
+    color: #000000;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.ash-extra-content p{
+    color:#fff;
+}
+
+/* タブレット */
+@media (max-width: 900px) {
+    .ash-extra-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* スマートフォン */
+@media (max-width: 600px) {
+    .ash-extra-lead {
+        margin-bottom: 35px;
+    }
+
+    .ash-extra-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .ash-extra-card {
+        max-width: 440px;
+        margin-inline: auto;
+    }
+
+    .ash-extra-content {
+        padding: 20px;
+    }
+}
