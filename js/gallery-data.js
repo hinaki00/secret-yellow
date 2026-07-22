@@ -2,7 +2,7 @@
 
 const galleryData = [
        {
-        image: "images/blog.13.jpg",
+        image: "images/blog13.jpg",
         title: "笑っている",
         category: "ASH JOURNEY",
         year: "2026"
