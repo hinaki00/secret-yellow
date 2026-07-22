@@ -2424,3 +2424,11 @@ body.menu-open {
     margin-top:40px;
 
 }
+
+.making video {
+    width: 100%;
+    max-width: 900px;
+    display: block;
+    margin: 30px auto;
+    border-radius: 12px;
+}
