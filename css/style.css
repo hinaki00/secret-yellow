@@ -2432,3 +2432,201 @@ body.menu-open {
     margin: 30px auto;
     border-radius: 12px;
 }
+
+/* gallery.html PC表示を修正 */
+@media (min-width: 901px) {
+    .gallery-list-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 60px 28px;
+    }
+
+    .gallery-list-item {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .gallery-list-item img {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 5;
+        object-fit: cover;
+    }
+}
+
+/* ==============================
+   ギャラリー一覧
+============================== */
+
+.gallery-list {
+    background: var(--color-gray);
+}
+
+.gallery-list-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 60px 28px;
+}
+
+.gallery-list-item {
+    min-width: 0;
+}
+
+.gallery-list-link {
+    display: block;
+    width: 100%;
+    padding: 0;
+    color: inherit;
+    text-align: left;
+    background: none;
+    border: none;
+    cursor: zoom-in;
+}
+
+.gallery-list-image {
+    overflow: hidden;
+}
+
+.gallery-list-image img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    transition:
+        transform 0.6s ease,
+        opacity 0.3s ease;
+}
+
+.gallery-list-link:hover img {
+    opacity: 0.9;
+    transform: scale(1.02);
+}
+
+.gallery-list-info {
+    padding-top: 18px;
+}
+
+.gallery-list-category {
+    margin-bottom: 5px;
+    color: var(--color-subtext);
+    font-size: 9px;
+    letter-spacing: 0.22em;
+}
+
+.gallery-list-info h2 {
+    margin-bottom: 5px;
+    color: var(--color-black);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.gallery-list-year {
+    color: var(--color-subtext);
+    font-size: 10px;
+    letter-spacing: 0.15em;
+}
+
+.gallery-back {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+@media (max-width: 900px) {
+
+    .gallery-list-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 50px 24px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .gallery-list-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .gallery-back {
+        margin-top: 70px;
+    }
+
+}
+.gallery-list-link{
+    display:block;
+    width:100%;
+    padding:0;
+    border:none;
+    background:none;
+    color:inherit;
+    text-align:left;
+    cursor:zoom-in;
+}
+
+.gallery-list-image{
+    overflow:hidden;
+}
+
+.gallery-list-image img{
+    display:block;
+    width:100%;
+    aspect-ratio:4 / 5;
+    object-fit:cover;
+}
+
+.gallery-list-category{
+    margin-bottom:5px;
+    color:var(--color-subtext);
+    font-size:9px;
+    letter-spacing:.22em;
+}
+
+.gallery-list-year{
+    margin-top:6px;
+    color:var(--color-subtext);
+    font-size:10px;
+}
+.gallery-list-link {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: inherit;
+    text-align: left;
+    cursor: zoom-in;
+}
+
+.gallery-list-image {
+    overflow: hidden;
+}
+
+.gallery-list-image img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    transition:
+        transform .6s ease,
+        opacity .3s ease;
+}
+
+.gallery-list-link:hover img {
+    opacity: .9;
+    transform: scale(1.02);
+}
+
+.gallery-list-category {
+    margin-bottom: 5px;
+    color: var(--color-subtext);
+    font-size: 9px;
+    letter-spacing: .22em;
+}
+
+.gallery-list-year {
+    margin-top: 6px;
+    color: var(--color-subtext);
+    font-size: 10px;
+}
