@@ -1,6 +1,19 @@
 "use strict";
 
 const galleryData = [
+
+               {
+        image: "images/gallery29.jpg",
+        title: "雨に隠れる",
+        category: "ASH JOURNEY",
+        year: "2026"
+    },
+           {
+        image: "images/gallery28.jpg",
+        title: "誓い",
+        category: "ASH JOURNEY",
+        year: "2026"
+    },
        {
         image: "images/blog13.jpg",
         title: "笑っている",
