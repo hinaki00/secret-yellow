@@ -1,6 +1,15 @@
 const newsData = [
 
             {
+        date: "2026.07.24",
+        datetime: "2026-07-24",
+        category: "WEBSITE",
+        text: "サイト「キャラクター一覧ページ」を公開しました。",
+        link: "character.html",
+        newTab: false
+    },
+
+            {
         date: "2026.07.22",
         datetime: "2026-07-22",
         category: "BLOG",
