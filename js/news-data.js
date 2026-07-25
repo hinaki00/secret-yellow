@@ -1,5 +1,14 @@
 const newsData = [
 
+
+                    {
+        date: "2026.07.25",
+        datetime: "2026-07-25",
+        category: "BLOG",
+        text: "ブログ「休日は、好きなものに囲まれて。」を公開しました。",
+        link: "blog09.html",
+        newTab: false
+    },
                 {
         date: "2026.07.25",
         datetime: "2026-07-25",

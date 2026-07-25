@@ -1,5 +1,13 @@
 const blogData = [
 
+                    {
+        date: "2026.07.25",
+        title: "休日は、好きなものに囲まれて。",
+        text: "休日は、好きなものに囲まれて。",
+        image: "images/blog018.jpg",
+        link: "blog09.html"
+    },
+
 
                         {
         date: "2026.07.25",
