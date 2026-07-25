@@ -1,5 +1,14 @@
 const blogData = [
 
+
+                        {
+        date: "2026.07.25",
+        title: "宮薙とアスハはどうやって生まれた？",
+        text: "宮薙とアスハはどうやって生まれた？",
+        image: "images/gallery27.jpg",
+        link: "blog08.html"
+    },
+
                     {
         date: "2026.07.22",
         title: "イラストメイキング",

@@ -1,5 +1,14 @@
 const newsData = [
 
+                {
+        date: "2026.07.25",
+        datetime: "2026-07-25",
+        category: "BLOG",
+        text: "ブログ「宮薙とアスハはどうやって生まれた？」を公開しました。",
+        link: "blog08.html",
+        newTab: false
+    },
+
             {
         date: "2026.07.24",
         datetime: "2026-07-24",
