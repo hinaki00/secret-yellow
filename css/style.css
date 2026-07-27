@@ -802,10 +802,15 @@ ul {
         gap: 55px;
     }
 
-    .about-image {
-        width: min(100%, 450px);
+@media (max-width: 768px) {
+
+    .about-image img {
+        width: 50%;
         margin: 0 auto;
     }
+
+
+}
 
 }
 
@@ -2307,38 +2312,47 @@ body.menu-open {
     text-align: center;
 }
 
-@media screen and (max-width: 900px) {
+@media (max-width: 768px) {
 
     .home-character-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .home-character-card:last-child {
-        grid-column: 1 / -1;
-        max-width: calc(50% - 16px);
-        margin: 0 auto;
-    }
-
-}
-
-@media screen and (max-width: 600px) {
-
-    .home-character-grid {
-        grid-template-columns: 1fr;
-        gap: 24px;
-    }
-
-    .home-character-card:last-child {
-        grid-column: auto;
-        max-width: none;
-        margin: 0;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
     }
 
     .home-character-content {
-        padding: 24px;
+        padding: 14px 10px;
     }
 
+    /* ASH JOURNEY */
+    .home-character-work {
+        margin-bottom: 8px;
+        font-size: 8px;
+        line-height: 1.7;
+        letter-spacing: 0.1em;
+    }
+
+    /* 宮薙 千秋 */
+    .home-character-content h3 {
+        margin-bottom: 10px;
+        font-size: 15px;
+        line-height: 1.45;
+    }
+
+    /* MIYANAGU CHIAKI */
+    .home-character-content h3 span {
+        margin-top: 4px;
+        font-size: 8px;
+        line-height: 1.5;
+        letter-spacing: 0.08em;
+    }
+
+    /* 説明文 */
+    .home-character-content > p:last-child {
+        font-size: 11px;
+        line-height: 1.8;
+    }
 }
+
 
 .question {
     display: inline-block;
@@ -2629,4 +2643,65 @@ body.menu-open {
     margin-top: 6px;
     color: var(--color-subtext);
     font-size: 10px;
+}
+@media (max-width: 768px) {
+
+    .gallery-grid {
+        grid-template-columns: 1.35fr 1fr;
+        grid-template-rows: repeat(2, 170px);
+        gap: 10px;
+    }
+
+    .gallery-item-large {
+        grid-row: 1 / 3;
+    }
+
+    .gallery-item,
+    .gallery-item-large,
+    .gallery-item:not(.gallery-item-large) {
+        height: auto;
+    }
+
+    .gallery-info {
+        bottom: 12px;
+        left: 12px;
+    }
+
+    .gallery-info p {
+        margin-bottom: 2px;
+        font-size: 7px;
+        letter-spacing: 0.15em;
+    }
+
+    .gallery-info h3 {
+        font-size: 14px;
+        line-height: 1.3;
+    }
+}
+@media (max-width: 768px) {
+
+    .home-blog .blog-grid,
+    .blog-page .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .blog-card-content {
+        padding: 16px;
+    }
+
+    .blog-card-content h2 {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .blog-card-content p {
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+    .blog-meta {
+        font-size: 10px;
+    }
+
 }
