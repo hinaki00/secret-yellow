@@ -1037,10 +1037,10 @@ body.ash-page a {
         grid-template-columns: 90px 1fr;
     }
 
-    .ash-gallery-grid {
-        grid-template-columns: 1fr;
-    }
-
+.ash-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
     .ash-ending {
         min-height: 600px;
     }
@@ -1420,5 +1420,43 @@ body.ash-page a {
 
     .ash-extra-content {
         padding: 20px;
+    }
+}
+@media (max-width: 768px) {
+
+    .ash-novel-lead {
+        margin-bottom: 28px;
+        font-size: 12px;
+        line-height: 1.8;
+    }
+
+    .ash-novel-list {
+        gap: 14px;
+    }
+
+    .ash-novel-card {
+        padding: 18px 16px;
+    }
+
+    .ash-novel-card span {
+        font-size: 8px;
+        letter-spacing: 0.16em;
+    }
+
+    .ash-novel-card h3 {
+        margin: 8px 0;
+        font-size: 21px;
+        line-height: 1.35;
+    }
+
+    .ash-novel-card p {
+        margin: 0;
+        font-size: 11px;
+        line-height: 1.7;
+    }
+
+    .ash-novel-card strong {
+        margin-top: 12px;
+        font-size: 11px;
     }
 }
