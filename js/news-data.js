@@ -1,4 +1,14 @@
 const newsData = [
+
+                    {
+        date: "2026.08.03",
+        datetime: "2026-08-03",
+        category: "NOVEL",
+        text: "「アッシュ・ジャーニー第4話（小説）」を公開しました。",
+        link: "novel04.html",
+        newTab: true
+    },
+
                 {
         date: "2026.07.28",
         datetime: "2026-07-28",
