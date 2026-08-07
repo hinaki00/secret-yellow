@@ -1,6 +1,38 @@
 "use strict";
 
 const galleryData = [
+                                                                      {
+        image: "images/gallery36.jpg",
+        title: "血",
+        category: "ILLUSTRATION",
+        year: "2026"
+    },
+                                                                  {
+        image: "images/gallery35.jpg",
+        title: "白咲 桜",
+        category: "ILLUSTRATION",
+        year: "2026"
+    },
+                                                              {
+        image: "images/gallery34.jpg",
+        title: "暑いね〜",
+        category: "ILLUSTRATION",
+        year: "2026"
+    },
+                {
+        image: "images/gallery33.jpg",
+        title: "狂犬アスハ",
+        category: "ASH JOURNEY",
+        year: "2026"
+    },
+
+                                                          {
+        image: "images/gallery32.jpg",
+        title: "夏が来た！",
+        category: "ILLUSTRATION",
+        year: "2026"
+    },
+    
                {
         image: "images/gallery31.jpg",
         title: "抱きしめて",
