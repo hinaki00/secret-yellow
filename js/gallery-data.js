@@ -1,7 +1,19 @@
 "use strict";
 
 const galleryData = [
-                                                                      {
+                                       {
+        image: "images/gallery38.jpg",
+        title: "めんこ",
+        category: "ILLUSTRATION",
+        year: "2026"
+    },
+                                   {
+        image: "images/gallery37.jpg",
+        title: "めんこ",
+        category: "ILLUSTRATION",
+        year: "2026"
+    },
+                               {
         image: "images/gallery36.jpg",
         title: "血",
         category: "ILLUSTRATION",
