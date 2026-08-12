@@ -298,3 +298,24 @@ document.addEventListener("keydown", (event) => {
     }
 
 });
+
+/* =========================
+   LOADING
+========================= */
+
+const summerLoading =
+    document.getElementById("summer-loading");
+
+if (summerLoading) {
+
+    setTimeout(() => {
+
+        summerLoading.classList.add("hide");
+
+        setTimeout(() => {
+            summerLoading.style.display = "none";
+        }, 1000);
+
+    }, 2600);
+
+}
