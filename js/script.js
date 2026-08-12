@@ -202,7 +202,7 @@ if (visitorCount) {
 
             console.log("GoatCounter:", data);
 
-const oldVisitors = 330;
+const oldVisitors = 340;
 
 const goatCount =
     Number(String(data.count).replace(/,/g, ""));
