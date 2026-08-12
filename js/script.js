@@ -224,3 +224,77 @@ visitorCount.textContent =
             visitorCount.textContent = "------";
         });
 }
+
+const summerLightbox =
+    document.querySelector(".summer-lightbox");
+
+const summerLightboxImage =
+    document.querySelector(".summer-lightbox-image");
+
+const summerLightboxClose =
+    document.querySelector(".summer-lightbox-close");
+
+document.addEventListener("click", (event) => {
+
+    const galleryLink =
+        event.target.closest("[data-lightbox-image]");
+
+    if (
+        !galleryLink ||
+        !summerLightbox ||
+        !summerLightboxImage
+    ) {
+        return;
+    }
+
+    const imageSrc =
+        galleryLink.dataset.lightboxImage;
+
+    const image =
+        galleryLink.querySelector("img");
+
+    summerLightboxImage.src = imageSrc;
+    summerLightboxImage.alt =
+        image ? image.alt : "";
+
+    summerLightbox.classList.add("active");
+});
+
+const closeSummerLightbox = () => {
+
+    if (!summerLightbox || !summerLightboxImage) {
+        return;
+    }
+
+    summerLightbox.classList.remove("active");
+
+    summerLightboxImage.src = "";
+    summerLightboxImage.alt = "";
+};
+
+if (summerLightboxClose) {
+
+    summerLightboxClose.addEventListener(
+        "click",
+        closeSummerLightbox
+    );
+}
+
+if (summerLightbox) {
+
+    summerLightbox.addEventListener("click", (event) => {
+
+        if (event.target === summerLightbox) {
+            closeSummerLightbox();
+        }
+
+    });
+}
+
+document.addEventListener("keydown", (event) => {
+
+    if (event.key === "Escape") {
+        closeSummerLightbox();
+    }
+
+});
