@@ -1255,3 +1255,173 @@ a {
     }
 
 }
+
+/* ========================================
+   LOADING
+======================================== */
+
+.summer-loading {
+    position: fixed;
+    z-index: 99999;
+    inset: 0;
+
+    display: grid;
+    place-items: center;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            160deg,
+            #55bdf2 0%,
+            #8fdcff 55%,
+            #dff5ff 100%
+        );
+
+    transition:
+        opacity 1s ease,
+        visibility 1s ease;
+}
+
+/* 光 */
+.summer-loading::before {
+    position: absolute;
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at 75% 20%,
+            rgba(255, 255, 255, 0.9),
+            transparent 30%
+        );
+
+    content: "";
+}
+
+/* 薄い白フィルター */
+.summer-loading::after {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to bottom,
+            transparent 40%,
+            rgba(255, 255, 255, 0.18)
+        );
+
+    content: "";
+}
+
+.summer-loading-inner {
+    position: relative;
+    z-index: 2;
+
+    padding: 30px;
+
+    text-align: center;
+    color: #fff;
+}
+
+
+/* 小さい英字 */
+
+.summer-loading-label {
+    display: block;
+
+    margin-bottom: 25px;
+
+    font-family: "Playfair Display", serif;
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 0.4em;
+
+    opacity: 0;
+
+    animation:
+        summerLoadingFade 1s 0.2s forwards;
+}
+
+
+/* メインコピー */
+
+.summer-loading-copy {
+    margin: 0;
+
+    font-size: clamp(20px, 3vw, 32px);
+    font-weight: 500;
+
+    line-height: 2;
+    letter-spacing: 0.15em;
+}
+
+.summer-loading-copy span {
+    display: block;
+
+    opacity: 0;
+    transform: translateY(15px);
+}
+
+.summer-loading-copy span:first-child {
+    animation:
+        summerLoadingFade 1.2s 0.5s forwards;
+}
+
+.summer-loading-copy span:last-child {
+    animation:
+        summerLoadingFade 1.2s 0.9s forwards;
+}
+
+
+/* 黄色ライン */
+
+.summer-loading-line {
+    width: 0;
+    height: 3px;
+
+    margin: 28px auto 0;
+
+    background: var(--summer-yellow);
+
+    animation:
+        summerLoadingLine 1.2s 1.2s forwards;
+}
+
+
+/* 消える */
+
+.summer-loading.hide {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+/* アニメーション */
+
+@keyframes summerLoadingFade {
+
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes summerLoadingLine {
+
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100px;
+    }
+
+}
