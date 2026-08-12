@@ -653,24 +653,17 @@ gtag('config', 'G-MPYZKE43J1');
 <script src="js/blog-data.js"></script>
 <script src="js/blog.js"></script>
 
-<script src="js/script.js"></script>
-<script>
-fetch("https://api.counterapi.dev/v1/secret-yellow/homepage/up")
-.then(res => res.json())
-.then(data => {
-
-    document.getElementById("visitor-count").textContent =
-        String(data.count).padStart(6,"0");
-
-})
-.catch(err => {
-
-    console.error(err);
-
-    document.getElementById("visitor-count").textContent = "------";
-
-});
+<script src="js/script.js?v=2"></script>
+<script
+    data-goatcounter="https://hinaki00.goatcounter.com/count"
+    async
+    src="https://gc.zgo.at/count.js">
 </script>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
 </body>
 
 </html>
