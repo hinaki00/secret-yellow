@@ -1,5 +1,15 @@
 const newsData = [
 
+
+             {
+        date: "2026.08.12",
+        datetime: "2026-08-12",
+        category: "WEBSITE",
+        text: "特設サイト「サマーガール・ブルー」を公開しました。",
+        link: "summer-girl-blue.html",
+        newTab: false
+    },
+   
                     {
         date: "2026.08.03",
         datetime: "2026-08-03",
