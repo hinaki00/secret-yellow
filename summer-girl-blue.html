@@ -35,6 +35,25 @@
 
 <body class="summer-page">
 
+<!-- LOADING -->
+<div class="summer-loading" id="summer-loading">
+
+    <div class="summer-loading-inner">
+
+        <span class="summer-loading-label">
+            SUMMER GIRL BLUE
+        </span>
+
+        <p class="summer-loading-copy">
+            <span>あの夏、</span>
+            <span>確かに恋をしていた。</span>
+        </p>
+
+        <div class="summer-loading-line"></div>
+
+    </div>
+
+</div>
     <!-- HEADER -->
     <header class="summer-header">
 
@@ -760,6 +779,32 @@ document.addEventListener("keydown", (event) => {
     }
 
 });
+
+</script>
+<script>
+
+/* =========================
+   LOADING
+========================= */
+
+const summerLoading =
+    document.getElementById("summer-loading");
+
+if (summerLoading) {
+
+    setTimeout(() => {
+
+        summerLoading.classList.add("hide");
+
+        setTimeout(() => {
+
+            summerLoading.style.display = "none";
+
+        }, 1000);
+
+    }, 2600);
+
+}
 
 </script>
 
