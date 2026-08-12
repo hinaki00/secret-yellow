@@ -176,14 +176,51 @@ window.addEventListener("load", () => {
 
 });
 
-const namespace = "secret-yellow";
-const key = "homepage";
+/* =========================
+   VISITOR COUNTER
+========================= */
 
-fetch(`https://api.countapi.xyz/hit/${namespace}/${key}`)
-.then(res => res.json())
-.then(data => {
+const visitorCount =
+    document.getElementById("visitor-count");
 
-    document.getElementById("visitor-count").textContent =
-        String(data.value).padStart(6,"0");
+if (visitorCount) {
 
-});
+    const counterUrl =
+        "https://hinaki00.goatcounter.com/counter/TOTAL.json";
+
+    fetch(counterUrl)
+        .then((response) => {
+
+            if (!response.ok) {
+                throw new Error(`HTTP error: ${response.status}`);
+            }
+
+            return response.json();
+        })
+
+        .then((data) => {
+
+            console.log("GoatCounter:", data);
+
+const oldVisitors = 330;
+
+const goatCount =
+    Number(String(data.count).replace(/,/g, ""));
+
+const totalCount =
+    oldVisitors + goatCount;
+
+visitorCount.textContent =
+    String(totalCount).padStart(6, "0");
+        })
+
+        .catch((error) => {
+
+            console.error(
+                "Visitor counter error:",
+                error
+            );
+
+            visitorCount.textContent = "------";
+        });
+}
